@@ -6,3 +6,4 @@
 
 console.log(b); // undefined
 var b = 10;    
+const 
