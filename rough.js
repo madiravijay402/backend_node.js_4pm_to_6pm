@@ -1,7 +1,10 @@
+console.log("hello");
+function add(a, b) {
+    return a + b;
+}
+console.log(add(1, 2));
 
-console.log(a);
 var a = 1;
+console.log(a);
 
-// console.log(b);
-// let b=20;
-
+// let b = 20;
