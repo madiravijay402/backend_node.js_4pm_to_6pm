@@ -1,8 +1,9 @@
 
- count=12;
-   count=15;
- const outer = ()=>{
+ "use strict";
+ let count=12;
 
+ const outer = ()=>{
+  
   let count = 0;
 
   return ()=>{
@@ -16,7 +17,8 @@
 
 
 }
-console.log(typeofcount);
+
+console.log(count);
 
 
 const data = outer()
