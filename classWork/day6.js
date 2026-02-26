@@ -25,7 +25,7 @@ console.log(cA);
 
 const object={newData:"react"}
 const newobj={object}
-console.log(newobj);
+console.log(newobj); 
 
 
 
