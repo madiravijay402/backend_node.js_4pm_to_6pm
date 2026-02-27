@@ -1,0 +1,15 @@
+<script>
+
+    const details= async ()=>{
+        try{
+            const res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+            const data=await res.json();
+            console.log(data.title);
+            
+        }catch(error){
+            console.log("data not fetched",error);
+            
+        }
+    }
+    details();
+</script>
