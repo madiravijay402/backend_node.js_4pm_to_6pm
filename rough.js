@@ -1,10 +1,9 @@
-console.log("hello");
-function add(a, b) {
-    return a + b;
+let reverseString=(S)=>{
+    let reverse=[];
+    for(let i=S.length-1;i>=0;i--){
+        reverse+=S[i];
+    }
+    console.log(reverse);
+    
 }
-console.log(add(1, 2));
-
-var a = 1;
-console.log(a);
-
-// let b = 20;
+reverseString("vijay");
