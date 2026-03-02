@@ -1,16 +1,29 @@
 <script>
 
-    const details= async ()=>{
-        try{
-            const res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
-            const data=await res.json();
-            console.log(data.completed);
+    // const details= async ()=>{
+    //     try{
+    //         const res=await fetch("https://jsonplaceholder.typicode.com/todos/1");
+    //         const data=await res.json();
+    //         console.log(data.completed);
             
-        }catch(error){
-            console.log("data not fetched",error);
+    //     }catch(error){
+    //         console.log("data not fetched",error);
             
-        }
+    //     }
+    // }
+    // details();
+    const fetchData=async ()=>{
+    try{
+        console.log("fetching data....");
+        const data=new Promise((resolove)=>{
+            setTimeout(()=>{resolove({id:1,name:"vijay"})},3000)
+        });
+        console.log(data);
+        
+    }catch(error){
+        console.log("error",error);
     }
-    details();
+}
+fetchData();
     
 </script>
